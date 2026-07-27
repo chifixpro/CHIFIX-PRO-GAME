@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cache.manifest">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHIFIX PRO GAME</title>
+
+    <link rel="stylesheet" href="includes/style.css">
+</head>
+
+<body>
+
+<div id="splash">
+    <img src="includes/logo.png" id="logo" alt="CHIFIX PRO GAME">
+    <h1>CHIFIX PRO GAME</h1>
+    <h3>Professional PS4 Jailbreak Host</h3>
+</div>
+
+<div id="mainPage" style="display:none;">
+
+    <h1>CHIFIX PRO GAME</h1>
+    <h3 id="UA">Professional PS4 Jailbreak Host</h3>
+
+    <hr>
+
+    <div class="btn-container">
+
+        <form id="kernel-options">
+
+            <input type="radio" name="kernel" id="netctrl-exploit" value="netctrl">
+            <label for="netctrl-exploit">NetCtrl</label>
+
+            <input type="radio" name="kernel" id="lapse-exploit" value="lapse">
+            <label for="lapse-exploit">Lapse</label>
+
+        </form>
+
+        <button id="jeilbrek">START JAILBREAK</button>
+
+        <div class="autoJb">
+
+            <label for="autoJbInput" id="autoJbLabel">
+                Auto Jailbreak
+            </label>
+
+            <input
+                class="mt-2"
+                id="autoJbInput"
+                type="checkbox">
+
+        </div>
+
+    </div>
+
+    <div class="main-layout">
+
+        <div class="media-box">
+
+            <img
+                src="includes/logo.png"
+                alt="CHIFIX PRO GAME">
+
+        </div>
+
+        <pre id="console">
+======================================
+        CHIFIX PRO GAME
+======================================
+
+Host Ready...
+
+Waiting for your command...
+
+Press START JAILBREAK to continue.
+        </pre>
+
+    </div>
+
+</div>
+
+<script>
+
+window.onload = function () {
+
+    setTimeout(function () {
+
+        document.getElementById("splash").style.opacity = "0";
+
+        setTimeout(function () {
+
+            document.getElementById("splash").style.display = "none";
+
+            document.getElementById("mainPage").style.display = "block";
+
+        },800);
+
+    },3000);
+
+};
+
+</script>
+
+<script src="src/main.js"></script>
+<script src="includes/script.js"></script>
+
+</body>
+</html>
