@@ -14,7 +14,7 @@ const lapseRadio = document.getElementById("lapse-exploit");
 const kexForm = document.getElementById('kernel-options');
 
 // Show user agent
-UAElement.innerText += " " + navigator.userAgent;
+UAElement.innerText = "Professional Console Repair & Electronic Services";
 
 kexForm.addEventListener("change", function (event) {
     localStorage.setItem("exploitChain", event.target.value);
