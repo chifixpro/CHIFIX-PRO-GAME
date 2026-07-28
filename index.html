@@ -4,134 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHIFIX PRO GAME</title>
-<title>0671676544</title>
+
     <link rel="stylesheet" href="includes/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-<div id="splash">
-    <img src="includes/logo.png" id="logo" alt="CHIFIX PRO GAME">
-    <h1>CHIFIX PRO GAME</h1>
-    <h3>Professional PS4 Jailbreak Host</h3>
-</div>
+    <div class="header">
+        <h1>CHIFIX PRO GAME</h1>
 
-<div id="mainPage" style="display:none;">
+        <div class="contact">
+            <span><i class="fas fa-phone"></i> 0671676544</span>
 
-    <h1>CHIFIX PRO GAME</h1>
-    <h3 id="UA"> PS4 Jailbreak9.00-11.02</h3>
-
-    <hr>
-
-    <div class="btn-container">
-
-        <form id="kernel-options">
-
-            <input type="radio" name="kernel" id="netctrl-exploit" value="netctrl">
-            <label for="netctrl-exploit">NetCtrl</label>
-
-            <input type="radio" name="kernel" id="lapse-exploit" value="lapse">
-            <label for="lapse-exploit">Lapse</label>
-
-        </form>
-
-        <button id="jeilbrek">START JAILBREAK</button>
-
-        <div class="autoJb">
-
-            <label for="autoJbInput" id="autoJbLabel">
-                Auto Jailbreak
-            </label>
-
-            <input
-                class="mt-2"
-                id="autoJbInput"
-                type="checkbox">
-
+            <span>
+                <i class="fab fa-tiktok"></i>
+                CHIFIX PRO GAME
+            </span>
         </div>
-
     </div>
+
+    <div id="UA"></div>
 
     <div class="main-layout">
 
         <div class="media-box">
 
             <img
-                src="includes/logo.png"
-                alt="CHIFIX PRO GAME">
+                id="profile"
+                src="includes/chihab.jpg"
+                alt="CHIFIX PRO GAME"
+                onclick="doJb();"
+            >
+
+            <h2>CHIFIX PRO GAME</h2>
+
+            <p id="status">
+                Initializing Exploit...
+            </p>
+
+            <p class="reload">
+                If Jailbreak fails, tap the image to retry.
+            </p>
 
         </div>
 
         <pre id="console">
-======================================
-        CHIFIX PRO GAME
-======================================
+Welcome to CHIFIX PRO GAME
 
-Host Ready...
-
-Waiting for your command...
-
-Press START JAILBREAK to continue.
+Waiting...
         </pre>
 
     </div>
 
-</div>
+    <!-- تبقى العناصر مخفية حتى لا يتعطل script.js -->
+    <div style="display:none">
 
-<script>
+        <form id="kernel-options">
+            <input type="radio" name="kernel" id="netctrl-exploit" value="netctrl">
+            <input type="radio" name="kernel" id="lapse-exploit" value="lapse" checked>
+        </form>
 
-window.onload = function () {
+        <button id="jeilbrek"></button>
 
-    setTimeout(function () {
+        <label id="autoJbLabel"></label>
 
-        document.getElementById("splash").style.opacity = "0";
+        <input
+            id="autoJbInput"
+            type="checkbox"
+            checked
+        >
 
-        setTimeout(function () {
+    </div>
 
-            document.getElementById("splash").style.display = "none";
-
-            document.getElementById("mainPage").style.display = "block";
-
-        },800);
-
-    },3000);
-
-};
-
-</script>
-... نهاية محتوى الصفحة ...
-
-<!-- الصق هنا -->
-
-<hr>
-
-<div style="text-align:center;padding:30px;">
-
-    <h2 style="color:#00bfff;">CONTACT</h2>
-
-    <p style="font-size:22px;">📞 0671676544</p>
-
-    <p>
-        <a href="https://wa.me/213671676544" target="_blank">
-            🟢 WhatsApp
-        </a>
-    </p>
-
-    <p>
-        <a href="https://www.tiktok.com/@chifixprogame" target="_blank">
-            🎵 CHIFIX PRO GAME
-        </a>
-    </p>
-
-</div>
-
-<script src="src/main.js"></script>
-<script src="includes/script.js"></script>
-
-</body>
-</html>
-<script src="src/main.js"></script>
-<script src="includes/script.js"></script>
+    <script src="src/main.js"></script>
+    <script src="includes/script.js"></script>
 
 </body>
 </html>
